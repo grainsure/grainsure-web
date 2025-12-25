@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
+import logoImg from '../assets/gs1-logo.jpg';
 import { NAVIGATION } from '@config/site';
 import { Package } from 'lucide-react';
 import MobileMenu from '@components/react/MobileMenu';
-import logoImg from '/gs1-logo.jpg';
 
 const { currentPathname } = Astro.props;
 const isActiveLink = (href: string) : boolean => { return href === currentPathname; }
