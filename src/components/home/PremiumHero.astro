@@ -2,17 +2,24 @@
 import { Image } from 'astro:assets';
 import Button from '../ui/Button.astro';
 import heroBgImg from '@assets/gs-bg1.png';
+import heroBgDesktop from '@assets/gs-bg1.png'; // ภาพแนวนอน
+import heroBgMobile from '@assets/gs-bg2.png';   // ภาพแนวตั้ง
 ---
 <section class="relative h-[60vh] md:h-screen min-h-[400px] md:min-h-[600px] flex items-center overflow-hidden">
 <!-- <section class="relative h-screen min-h-[600px] flex items-center overflow-hidden"> -->
   <!-- Background Image with Overlay -->
   <div class="absolute inset-0">
     <Image 
-      src={heroBgImg}
-      alt="Grinsure.Co.LTD EE-KU KU60 KU75 Grain moisture meter"
-      class="w-full h-full object-cover"
-      width={2070}
-      height={1380}
+      src={heroBgMobile}
+      alt="Grainsure Mobile"
+      class="w-full h-full object-cover block md:hidden" 
+      decoding="async"
+    />
+    
+    <Image 
+      src={heroBgDesktop}
+      alt="Grainsure Desktop"
+      class="w-full h-full object-cover hidden md:block"
       decoding="async"
       fetchpriority="high"
     />
