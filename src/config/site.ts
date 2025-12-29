@@ -1,23 +1,23 @@
 // Site configuration
 export const SITE = {
-  title: 'AstroFlow',
-  description: 'Leading provider of optimized logistics and manufacturing solutions with state-of-the-art facilities and industry expertise.',
-  url: 'https://yourdomain.com',
-  author: 'AstroFlow',
+  title: 'Grainsure',
+  description: 'ผู้นำด้านเทคโนโลยีเครื่องวัดความชื้นเมล็ดพืชและวัสดุชนิดเม็ดในประเทศไทย ด้วยประสบการณ์กว่า 40 ปี ผลิตและจำหน่ายเครื่องวัดความชื้น พร้อมบริการหลังการขายที่ยอดเยี่ยม',
+  url: 'https://grainsure-web.pages.dev/',
+  author: 'Grainsure Co.Ltd',
 } as const;
 
 export const NAVIGATION = [
   { name: 'Home', href: '/' },
-  { name: 'Capabilities', href: '/capabilities' },
-  { name: 'Use Cases', href: '/use-cases' },
-  { name: 'Facilities', href: '/facilities' },
-  { name: 'Request Quote', href: '/rfq' },
-  { name: 'Documentation', href: '/documentation' },
+  { name: 'Products(Eng)', href: '/capabilities' },
+  { name: 'สินค้า', href: '/use-cases' },
+  { name: 'บริการ', href: '/facilities' },
+  { name: 'สำระควรรู้', href: '/rfq' },
+  { name: 'เอกสาร', href: '/documentation' },
 ] as const;
 
 export const SOCIAL_LINKS = {
-  linkedin: 'https://linkedin.com/company/yourcompany',
-  twitter: 'https://twitter.com/yourcompany',
-  facebook: 'https://facebook.com/yourcompany',
+  linkedin: '',
+  twitter: '',
+  facebook: 'https://www.facebook.com/Grainsure/',
 } as const;
 
