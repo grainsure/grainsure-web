@@ -7,12 +7,13 @@ export const SITE = {
 } as const;
 
 export const NAVIGATION = [
-  { name: 'Home', href: '/' },
-  { name: 'Products(Eng)', href: '/capabilities' },
-  { name: 'สินค้า', href: '/use-cases' },
+  { name: 'หน้าหลัก', href: '/' },
+  { name: 'สินค้า', href: '/EEKU-detail' },
   { name: 'บริการ', href: '/facilities' },
   { name: 'สำระควรรู้', href: '/rfq' },
   { name: 'เอกสาร', href: '/documentation' },
+  { name: 'เกี่ยวกับเรา', href: '/' },
+  { name: 'ติดต่อเรา', href: '/' },
 ] as const;
 
 export const SOCIAL_LINKS = {
