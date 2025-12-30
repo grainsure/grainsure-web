@@ -1,6 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-import techDashboardImg from '@assets/gs-banner2.png';
+import { Image } from "astro:assets";
+import techDashboardImg from "@assets/gs-banner2.png";
 
 interface Technology {
   title: string;
@@ -12,98 +12,149 @@ interface Technology {
 const technologies: Technology[] = [
   {
     title: "เที่ยงตรง แม่นยำ ใช้งานง่าย",
-    description: "ทุกเครื่องผ่านการสอบเที่ยบตามมาตรฐาน เพื่อความแม่นยำสูงสุดในการวัดความชื้นเมล็ดพืชและวัสดุชนิดเม็ดตามที่ลูกค้ากำหนด ใช้งานง่ายเพียงไม่กี่ขั้นตอน พร้อมวัดผลได้ทันที",
+    description:
+      "ทุกเครื่องผ่านการสอบเที่ยบตามมาตรฐาน เพื่อความแม่นยำสูงสุดในการวัดความชื้นเมล็ดพืชและวัสดุชนิดเม็ดตามที่ลูกค้ากำหนด ใช้งานง่ายเพียงไม่กี่ขั้นตอน พร้อมวัดผลได้ทันที",
     iconGradient: "from-blue-500 to-blue-600",
-    iconPath: "M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
-    
+    iconPath:
+      "M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
   },
   {
     title: "ทนทาน ทุกสภาพการใช้งาน",
-    description: "ตัวเครื่องทำจากเหล็ก ทนแรงกระแทก ทนทานต่อสภาพแวดล้อมการใช้งานที่หลากหลาย ทั้งในโรงงาน คลังสินค้า และภาคสนาม รองรับการใช้งานหนักได้อย่างมั่นใจ",
+    description:
+      "ตัวเครื่องทำจากเหล็ก ทนแรงกระแทก ทนทานต่อสภาพแวดล้อมการใช้งานที่หลากหลาย ทั้งในโรงงาน คลังสินค้า และภาคสนาม รองรับการใช้งานหนักได้อย่างมั่นใจ",
     iconGradient: "from-teal-500 to-teal-600",
-    iconPath: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM12 8v9M8 12l8 0"
+    iconPath: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM12 8v9M8 12l8 0",
   },
   {
     title: "ซื้อครั้งเดียว ดูแลยาวๆ",
-    description: "บริการหลังการขายโดยทีมงานมืออาชีพ พร้อมให้คำปรึกษาและดูแลเครื่องวัดความชื้นของคุณอย่างต่อเนื่อง เพื่อให้มั่นใจว่าเครื่องของคุณจะทำงานได้อย่างเต็มประสิทธิภาพตลอดเวลา",
+    description:
+      "บริการหลังการขายโดยทีมงานมืออาชีพ พร้อมให้คำปรึกษาและดูแลเครื่องวัดความชื้นของคุณอย่างต่อเนื่อง เพื่อให้มั่นใจว่าเครื่องของคุณจะทำงานได้อย่างเต็มประสิทธิภาพตลอดเวลา",
     iconGradient: "from-blue-500 to-blue-600",
-    iconPath: "M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"
+    iconPath:
+      "M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z",
   },
   {
     title: "ราคาย่อมเยา คุ้มค่า จับต้องได้",
-    description: "ราคาขายเพื่อการเกษตรที่เข้าถึงได้ง่ายด้วยคุณภาพ และความแม่นยำเทียบเท่าเครื่องจากต่างประเทศ",
+    description:
+      "ราคาขายเพื่อการเกษตรที่เข้าถึงได้ง่ายด้วยคุณภาพ และความแม่นยำเทียบเท่าเครื่องจากต่างประเทศ",
     iconGradient: "from-teal-500 to-teal-600",
-    iconPath: "M15.5 14h.01M7 7h.01M4.6 11l5.8-5.8a2 2 0 012.8 0l6.2 6.2a2 2 0 010 2.8l-5.8 5.8a2 2 0 01-2.8 0l-6.2-6.2a2 2 0 010-2.8z"
+    iconPath:
+      "M15.5 14h.01M7 7h.01M4.6 11l5.8-5.8a2 2 0 012.8 0l6.2 6.2a2 2 0 010 2.8l-5.8 5.8a2 2 0 01-2.8 0l-6.2-6.2a2 2 0 010-2.8z",
   },
   {
     title: "รับผลิต พิเศษเฉพาะ ตามความต้องการลูกค้า",
-    description: "รับผลิตเครื่องวัดความชื้น ชนิดเมล็ด ตามความต้องการเฉพาะของลูกค้าแต่ละราย ไม่มีจำนวนขั้นต่ำในการสั่งซื้อ พร้อมบริการให้คำปรึกษาเพื่อเลือกเครื่องที่เหมาะสมกับการใช้งานของคุณ",
+    description:
+      "รับผลิตเครื่องวัดความชื้น ชนิดเมล็ด ตามความต้องการเฉพาะของลูกค้าแต่ละราย ไม่มีจำนวนขั้นต่ำในการสั่งซื้อ พร้อมบริการให้คำปรึกษาเพื่อเลือกเครื่องที่เหมาะสมกับการใช้งานของคุณ",
     iconGradient: "from-blue-500 to-blue-600",
-    iconPath: "M12 15l-2 5L9 9l11 4-5 2zm0 0l4 8 4-11-11 4 8 4z M9 7h6M9 11h3 M4 22V4a2 2 0 012-2h12a2 2 0 012 2v18l-5-2-5 2-5-2-2 2z"
+    iconPath:
+      "M12 15l-2 5L9 9l11 4-5 2zm0 0l4 8 4-11-11 4 8 4z M9 7h6M9 11h3 M4 22V4a2 2 0 012-2h12a2 2 0 012 2v18l-5-2-5 2-5-2-2 2z",
   },
   {
     title: "ผ่านการรับรองมาตรฐานตามกฎหมาย",
-    description: "เครื่องวัดความชื้นข้าวโพด และข้าวเปลือก ผ่านการรับรองจากสำนักงานกลางชั่งตวงวัด กรมการค้าภายใน กระทรวงพาณิชย์ สามรถนำไปใช้ในเชิงพาณิชย์ได้อย่างถูกต้องตามกฎหมาย (โปรดสอบถามรุ่นที่มีการรับรอง)",
+    description:
+      "เครื่องวัดความชื้นข้าวโพด และข้าวเปลือก ผ่านการรับรองจากสำนักงานกลางชั่งตวงวัด กรมการค้าภายใน กระทรวงพาณิชย์ สามรถนำไปใช้ในเชิงพาณิชย์ได้อย่างถูกต้องตามกฎหมาย (โปรดสอบถามรุ่นที่มีการรับรอง)",
     iconGradient: "from-blue-500 to-blue-600",
-    iconPath: "M12 15l-2 5L9 9l11 4-5 2zm0 0l4 8 4-11-11 4 8 4z M9 7h6M9 11h3 M4 22V4a2 2 0 012-2h12a2 2 0 012 2v18l-5-2-5 2-5-2-2 2z"
+    iconPath:
+      "M12 15l-2 5L9 9l11 4-5 2zm0 0l4 8 4-11-11 4 8 4z M9 7h6M9 11h3 M4 22V4a2 2 0 012-2h12a2 2 0 012 2v18l-5-2-5 2-5-2-2 2z",
   },
   {
     title: "เชี่ยวชาญด้านการวัดความชื้นเมล็ด",
-    description: "ประสบการณ์กว่า 40 ปี ในการวิจัยและพัฒนาเครื่องวัดความชื้นเมล็ดพืชและวัสดุชนิดเม็ด เพื่อตอบโจทย์ความต้องการของลูกค้าอย่างแท้จริง เป็นผู้ผลิตและจำหน่ายโดยตรง",
+    description:
+      "ประสบการณ์กว่า 40 ปี ในการวิจัยและพัฒนาเครื่องวัดความชื้นเมล็ดพืชและวัสดุชนิดเม็ด เพื่อตอบโจทย์ความต้องการของลูกค้าอย่างแท้จริง เป็นผู้ผลิตและจำหน่ายโดยตรง",
     iconGradient: "from-teal-500 to-teal-600",
-    iconPath: "M22 10v6M2 10l10-5 10 5-10 5z M6 12v5c0 1.1.9 2 2 2h8a2 2 0 002-2v-5"
-  }
+    iconPath:
+      "M22 10v6M2 10l10-5 10 5-10 5z M6 12v5c0 1.1.9 2 2 2h8a2 2 0 002-2v-5",
+  },
 ];
 ---
 
-<section class="py-24 bg-linear-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+<section
+  class="py-24 bg-linear-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+>
   <!-- Background Pattern -->
   <div class="absolute inset-0 opacity-10">
-    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+    <div
+      class="absolute inset-0"
+      style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"
+    >
+    </div>
   </div>
 
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Content -->
       <div>
-        <div class="inline-block px-4 py-2 mb-4 bg-white/10 backdrop-blur-sm text-white text-sm font-semibold rounded-full">
+        <div
+          class="inline-block px-4 py-2 mb-4 bg-white/10 backdrop-blur-sm text-white text-sm font-semibold rounded-full"
+        >
           Technology & Innovation
         </div>
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          ทำไมต้องเลือก<br><span class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-teal-400">เครื่องวัดความชื้นของเรา</span>
+          ทำไมต้องเลือก<br /><span
+            class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-teal-400"
+            >เครื่องวัดความชื้นของเรา</span
+          >
         </h2>
         <p class="text-xl text-slate-300 mb-8 leading-relaxed">
-          "4 ทศวรรษแห่งความแม่นยำ เคียงข้างเกษตรกรไทย" จากงานวิจัยสู่เครื่องวัดความชื้นอันดับต้นๆ ที่บริษัทชั้นนำไว้วางใจมานานกว่า 40 ปี มาตรฐานที่คนไทยสร้าง เพื่อความมั่งคั่งของผลิตผลไทยอย่างยั่งยืน.
+          "4 ทศวรรษแห่งความแม่นยำ เคียงข้างเกษตรกรไทย"
+          จากงานวิจัยสู่เครื่องวัดความชื้นอันดับต้นๆ
+          ที่บริษัทชั้นนำไว้วางใจมานานกว่า 40 ปี มาตรฐานที่คนไทยสร้าง
+          เพื่อความมั่งคั่งของผลิตผลไทยอย่างยั่งยืน.
         </p>
 
         <!-- Technology Features -->
         <div class="space-y-6">
-          {technologies.map((tech) => (
-            <div class="flex items-start group">
-              <div class={`shrink-0 w-12 h-12 rounded-lg bg-linear-to-br ${tech.iconGradient} flex items-center justify-center mr-4 group-hover:scale-110 transition-transform`}>
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={tech.iconPath} />
-                </svg>
+          {
+            technologies.map((tech) => (
+              <div class="flex items-start group">
+                <div
+                  class={`shrink-0 w-12 h-12 rounded-lg bg-linear-to-br ${tech.iconGradient} flex items-center justify-center mr-4 group-hover:scale-110 transition-transform`}
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d={tech.iconPath}
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-white mb-2">
+                    {tech.title}
+                  </h3>
+                  <p class="text-slate-400 leading-relaxed">
+                    {tech.description}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-2">{tech.title}</h3>
-                <p class="text-slate-400 leading-relaxed">
-                  {tech.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            ))
+          }
         </div>
 
         <!-- CTA -->
         <div class="mt-10">
-          <a 
-            href="/documentation" 
+          <a
+            href="/documentation"
             class="inline-flex items-center px-6 py-3 text-base font-semibold text-white bg-linear-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 rounded-lg shadow-lg hover:shadow-xl transition-all group"
           >
             ชมสินค้าและบริการของเรา
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </a>
         </div>
@@ -111,45 +162,82 @@ const technologies: Technology[] = [
 
       <!-- Visual -->
       <div class="relative">
-        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-          <Image 
-            src={techDashboardImg}
-            alt="Advanced logistics technology dashboard"
-            class="w-full h-full object-cover"
-            width={1200}
-            height={800}
-            class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-          />
-          <!-- <div class="absolute inset-0 bg-linear-to-br from-blue-900/80 via-teal-900/60 to-blue-900/80"></div> -->
-          <div class="absolute inset-0 flex items-center justify-center p-8">
-            <div class="text-center">
-              <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-linear-to-br from-blue-500 to-teal-500 flex items-center justify-center shadow-2xl">
-                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+        <div class="relative mt-12 lg:mt-0">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <Image
+              src={techDashboardImg}
+              alt="Advanced logistics technology dashboard"
+              width={1200}
+              height={800}
+              class="w-full h-auto min-h-[300px] object-cover transition-transform duration-500 hover:scale-105"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute inset-0 flex items-center justify-center p-4 sm:p-8"
+            >
+              <div class="text-center w-full">
+                <div
+                  class="w-12 h-12 md:w-24 md:h-24 mx-auto mb-3 md:mb-6 rounded-full bg-linear-to-br from-blue-500 to-teal-500 flex items-center justify-center shadow-2xl"
+                >
+                  <svg
+                    class="w-6 h-6 md:w-12 md:h-12 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+
+                <h3
+                  class="text-xl md:text-3xl font-bold text-white mb-1 md:mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] px-2"
+                >
+                  เที่ยงตรง ทนทาน ใช้ง่าย
+                </h3>
+
+                <p
+                  class="text-sm md:text-lg font-bold text-white/90 drop-shadow-[0_2px_2px_rgba(0,0,0,0.9)]"
+                >
+                  ได้รับความไว้วางใจมานานกว่า 40 ปี
+                </p>
               </div>
-              <h3 class="text-3xl font-bold text-white mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">เที่ยงตรง ทนทาน ใช้ง่าย</h3>
-              <p class="text-white text-lg font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,0.9)]">ได้รับความไว้วางใจมานานกว่า 40 ปี</p>
             </div>
           </div>
-        </div>
-        
-        <!-- Floating Cards -->
-        <div class="absolute -top-4 -right-4 bg-white rounded-lg p-4 shadow-xl z-20 animate-pulse">
-          <div class="flex items-center">
-            <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-            <span class="text-sm font-semibold text-slate-900">ซื้อครั้งเดียว ดูแลตลอดชีพ</span>
+
+          <div
+            class="absolute -top-2 -right-2 md:-top-4 md:-right-4 bg-white rounded-lg p-2 md:p-4 shadow-xl z-20 animate-pulse"
+          >
+            <div class="flex items-center">
+              <div class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500 mr-2">
+              </div>
+              <span
+                class="text-[10px] md:text-sm font-semibold text-slate-900 leading-none"
+                >ซื้อครั้งเดียว ดูแลตลอดชีพ</span
+              >
+            </div>
           </div>
-        </div>
-        <div class="absolute -bottom-4 -left-4 bg-white rounded-lg p-4 shadow-xl z-20 animate-pulse" style="animation-delay: 0.5s;">
-          <div class="flex items-center">
-            <div class="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
-            <span class="text-sm font-semibold text-slate-900">ดูแลยาวนาน ไร้กังวลเรื่องค่าบำรุงรักษา</span>
+
+          <div
+            class="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-white rounded-lg p-2 md:p-4 shadow-xl z-20 animate-pulse"
+            style="animation-delay: 0.5s;"
+          >
+            <div class="flex items-center">
+              <div class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-blue-500 mr-2">
+              </div>
+              <span
+                class="text-[10px] md:text-sm font-semibold text-slate-900 leading-none"
+                >ดูแลยาวนาน ไร้กังวลค่าบำรุงรักษา</span
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
