@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import Product1 from "@assets/KU72-PADDY01.png"; 
 import Product2 from "@assets/KU72-CORN01.png"; 
+import Product3 from "@assets/KU60-01.png"; 
+import Product4 from "@assets/EEKU-01.png"; 
 
 interface Industry {
   title: string;
@@ -20,11 +22,12 @@ const industries: Industry[] = [
     title2: "รุ่น KU72-PADDY",
     image: Product1,
     description:
-      "Temperature-controlled storage, compliance management, and specialized handling for medical supplies and pharmaceuticals.",
+      "ผ่านตรวจรับรองโดย สำนักงานกลางชั่งตวงวัด กรมการค้าภายใน สามารถใช้เป็นเครื่องมือชั่งตวงวัดในเชิงพาณิชย์ได้ ถูกต้องตาม พรบ.ชั่งตวงวัด",
     features: [
-      "Cold chain logistics",
-      "Regulatory compliance",
-      "Sterile manufacturing",
+      "วัดความชื้นข้าวเปลือกเท่านั้น",
+      "เหมาะสำหรับเกษตรกร ลานรับซื้อ ผู้ประกอบการโรงสีข้าว และห้องปฏิบัติการ",
+      "พกพาสะดวก ใช้งานได้ทุกที่",
+      "ทำงานด้วยไมโครโปรเซสเซอร์",
     ],
     href: "/",
   },
@@ -34,30 +37,45 @@ const industries: Industry[] = [
     title2: "รุ่น KU72-CORN",
     image: Product2,
     description:
-      "Scalable fulfillment, same-day delivery options, and returns management for modern retail operations.",
+      "ผ่านตรวจรับรองโดย สำนักงานกลางชั่งตวงวัด กรมการค้าภายใน สามารถใช้เป็นเครื่องมือชั่งตวงวัดในเชิงพาณิชย์ได้ ถูกต้องตาม พรบ.ชั่งตวงวัด",
     features: [
-      "Order fulfillment",
-      "Peak season support",
-      "Returns processing",
+      "วัดความชื้นข้าวโพดเลี้ยงสัตว์เท่านั้น",
+      "เหมาะสำหรับเกษตรกร ลานรับซื้อ ผู้ประกอบการจัดเก็บและแปรรูปข้าวโพด และห้องปฏิบัติการ",
+      "พกพาสะดวก ใช้งานได้ทุกที่",
+      "ทำงานด้วยไมโครโปรเซสเซอร์",
     ],
     href: "/",
   },
   {
-    title: "Technology & Electronics",
-    image: Product1,
-    features: [
-      "ESD-safe facilities",
-      "Component assembly",
-      "Global distribution",
-    ],
-    href: "/",
-  },
-  {
-    title: "Automotive",
-    image: Product1,
+    title: "เครื่องวัดความชื้นเมล็ด รุ่น KU60",
+    title1: "เครื่องวัดความชื้นเมล็ด",
+    title2: "รุ่น KU60",
+    image: Product3,
     description:
-      "Just-in-time delivery, parts manufacturing, and supply chain optimization for automotive production lines.",
-    features: ["JIT manufacturing", "Parts logistics", "Quality assurance"],
+      "สำหรับวัดความชื้นเมล็ดทั่วไป ตามชนิดเมล็ดที่ได้ทำการสอบเทียบไว้ล่วงหน้า ผลิตตามความต้องการของลูกค้าได้ ไม่มีจำนวนขั้นต่ำ มีข้อมูลการสอบเทียบเมล็ดมาตรฐานแล้ว ให้เลือกกว่า100ชนิด",
+    features: [
+      "วัดความชื้นเมล็ดพืชได้หลากหลายชนิด ขึ้นกับการทำสอบเทียบ",
+      "กำหนดชนิดเมล็ดที่ต้องการวัดได้สูงสุด 7 ชนิด สำหรับรุ่นมาตรฐานวัดได้5ชนิด(ข้าวเปลือก ข้าวโพดเลี้ยงสัตว์ ถั่วเหลือง ข้าวฟ่าง และถั่วเขียว)",
+      "เหมาะสำหรับเกษตรกร ธุรกิจหรือกิจการที่เกี่ยวข้องกับ การผลิต การจัดเก็บ การวิจัย การควบคุมคุณภาพเมล็ดพืช เมล็ดวัสดุทั่วไป",
+      "พกพาสะดวก ใช้งานได้ทุกที่",
+      "ทำงานด้วยไมโครโปรเซสเซอร์",
+    ],
+    href: "/",
+  },
+  {
+    title: "เครื่องวัดความชื้นเมล็ด รุ่น EE-KU",
+    title1: "เครื่องวัดความชื้นเมล็ด",
+    title2: "รุ่น EE-KU",
+    image: Product4,
+    description:
+      "สำหรับวัดความชื้นเมล็ดทั่วไป รุ่นพื้นฐาน ใช้งานง่ายที่สุด ทำงานด้วยระบบอนาล็อก ราคาประหยัด มีให้เลือก3รุ่นย่อย ตามชนิดเมล็ดที่ได้ทำการสอบเทียบไว้ล่วงหน้า",
+    features: [
+      "รุ่น วัดความชื้นข้าวโพดเลี้ยงสัตว์(อ่านค่าโดยตรง)",
+      "รุ่น วัดความชื้นกาแฟสาร(อ่านค่าโดยตรง)",
+      "รุ่น วัดความชื้นเมล็ดทั่วไป(อ่านค่าเทียบจากตารางความชื้้นเมล็ดชนิดนั้นๆ)",
+      "เหมาะสำหรับเกษตรกร ธุรกิจหรือกิจการที่เกี่ยวข้องกับ การผลิต การจัดเก็บ การวิจัย การควบคุมคุณภาพเมล็ดพืช เมล็ดวัสดุทั่วไป",
+      "พกพาสะดวก ใช้งานได้ทุกที่",
+    ],
     href: "/",
   }
 ];
