@@ -5,6 +5,8 @@ import Product2 from "@assets/KU72-CORN01.png";
 
 interface Industry {
   title: string;
+  title1: string;
+  title2: string;
   image: any;
   description: string;
   features: string[];
@@ -13,7 +15,9 @@ interface Industry {
 
 const industries: Industry[] = [
   {
-    title: "เครื่องวัดความชื้นข้าวเปลือก",
+    title: "เครื่องวัดความชื้นข้าวเปลือก รุ่น KU72-PADDY",
+    title1: "เครื่องวัดความชื้นข้าวเปลือก",
+    title2: "รุ่น KU72-PADDY",
     image: Product1,
     description:
       "Temperature-controlled storage, compliance management, and specialized handling for medical supplies and pharmaceuticals.",
@@ -25,7 +29,9 @@ const industries: Industry[] = [
     href: "/",
   },
   {
-    title: "เครื่องวัดความชื้นข้าวโพด",
+    title: "เครื่องวัดความชื้นข้าวโพด รุ่น KU72-CORN",
+    title1: "เครื่องวัดความชื้นข้าวโพด",
+    title2: "รุ่น KU72-CORN",
     image: Product2,
     description:
       "Scalable fulfillment, same-day delivery options, and returns management for modern retail operations.",
@@ -53,27 +59,7 @@ const industries: Industry[] = [
       "Just-in-time delivery, parts manufacturing, and supply chain optimization for automotive production lines.",
     features: ["JIT manufacturing", "Parts logistics", "Quality assurance"],
     href: "/",
-  },
-  {
-    title: "Food & Beverage",
-    image: Product1,
-    description:
-      "Cold storage, food safety compliance, and specialized handling for perishable goods and beverages.",
-    features: [
-      "Temperature control",
-      "HACCP compliance",
-      "Fast-track delivery",
-    ],
-    href: "/",
-  },
-  {
-    title: "Aerospace & Defense",
-    image: Product1,
-    description:
-      "Precision manufacturing, secure logistics, and compliance management for aerospace and defense applications.",
-    features: ["Secure facilities", "Precision components", "ITAR compliance"],
-    href: "/",
-  },
+  }
 ];
 
 const checkmarkPath =
@@ -117,13 +103,16 @@ const checkmarkPath =
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-20">
-                Best Seller
+                {item.title2}
               </div>
             </div>
 
             <div class="p-8 flex-grow flex flex-col">
               <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
-                {item.title}
+                {item.title1}
+              </h3>
+              <h3 class="text-2xl font-bold text-red-600 mb-3 group-hover:text-blue-600 transition-colors">
+                {item.title2}
               </h3>
               <p class="text-slate-600 leading-relaxed mb-6">
                 {item.description}
