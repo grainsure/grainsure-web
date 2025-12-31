@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import Product1 from "@assets/gs-bg1.png"; // ตรวจสอบว่าไฟล์นี้มีอยู่จริง
+import Product1 from "@assets/KU72-PADDY01.png"; 
+import Product2 from "@assets/KU72-CORN01.png"; 
 
 interface Industry {
   title: string;
@@ -12,7 +13,7 @@ interface Industry {
 
 const industries: Industry[] = [
   {
-    title: "Healthcare & Pharma",
+    title: "เครื่องวัดความชื้นข้าวเปลือก",
     image: Product1,
     description:
       "Temperature-controlled storage, compliance management, and specialized handling for medical supplies and pharmaceuticals.",
@@ -24,24 +25,24 @@ const industries: Industry[] = [
     href: "/",
   },
   {
-    title: "Technology & Electronics",
-    image: Product1,
-    features: [
-      "ESD-safe facilities",
-      "Component assembly",
-      "Global distribution",
-    ],
-    href: "/",
-  },
-  {
-    title: "E-commerce & Retail",
-    image: Product1,
+    title: "เครื่องวัดความชื้นข้าวโพด",
+    image: Product2,
     description:
       "Scalable fulfillment, same-day delivery options, and returns management for modern retail operations.",
     features: [
       "Order fulfillment",
       "Peak season support",
       "Returns processing",
+    ],
+    href: "/",
+  },
+  {
+    title: "Technology & Electronics",
+    image: Product1,
+    features: [
+      "ESD-safe facilities",
+      "Component assembly",
+      "Global distribution",
     ],
     href: "/",
   },
