@@ -8,11 +8,10 @@ export const SITE = {
 
 export const NAVIGATION = [
   { name: 'หน้าหลัก', href: '/' },
-  { name: 'สินค้า', href: '/EEKU-detail' },
-  { name: 'บริการ', href: '/facilities' },
+  { name: 'สินค้าและบริการ', href: '/EEKU-detail' },
   { name: 'สำระควรรู้', href: '/rfq' },
   { name: 'เอกสาร', href: '/documentation' },
-  { name: 'เกี่ยวกับเรา', href: '/' },
+  { name: 'เกี่ยวกับเรา', href: '/facilities' },
   { name: 'ติดต่อเรา', href: '/' },
 ] as const;
 
